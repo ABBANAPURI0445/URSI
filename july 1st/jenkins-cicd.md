@@ -1,4 +1,4 @@
-## stages:
+##  CI stages: 
    * clone source code
      ---
      git clone url
@@ -12,4 +12,8 @@
    * Static code analysis
    * Store artifacts into Jfrog
    ![Preview](./CICD-Pipeline.jpg)
+
+
+
+ 
   

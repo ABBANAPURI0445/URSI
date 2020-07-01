@@ -1,0 +1,28 @@
+node('build') {
+    stage('SCM') {
+    // clone source code
+    git 'https://github.com/ABBANAPURI0445/game-of-life.git'
+}
+ stage('Build') {
+    // build java source code using maven build tool
+    sh label: '', script: 'mvn package'
+}
+ stage('Junit'){
+     // Publish Junit Results
+     junit 'gameoflife-web/target/surefire-reports/*.xml'
+ }
+ stage('Archive the artifact'){
+     // store artifact in local machine or shared folder
+  archive 'gameoflife-web/target/gameoflife.war'
+ }
+ stage('Static Code analysis'){
+       // performing sonarqube analysis with "withSonarQubeENV(<Name of Server configured in Jenkins>)"
+    withSonarQubeEnv('sonarqube') {
+      // requires SonarQube Scanner for Maven 3.2+
+      sh 'mvn org.sonarsource.scanner.maven:sonar-maven-plugin:3.2:sonar'
+    }
+ }
+ stage('Artifactory'){
+     sh label: '', script: '''curl -uadmin:admin123 -T /home/maven/workspace/CI<Projectname>/gameoflife-web/target/gameoflife.war http://18.237.37.165:8081/artifactory/GOL<artifactory Repositoryname>/gameoflife.war'''
+ }
+}
