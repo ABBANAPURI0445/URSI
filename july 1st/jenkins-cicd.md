@@ -11,3 +11,5 @@
    * Archive the Artifact
    * Static code analysis
    * Store artifacts into Jfrog
+   ![Preview](./CICD-Pipeline.jpg)
+  
