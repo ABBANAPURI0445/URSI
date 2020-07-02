@@ -60,17 +60,17 @@ steps:
 
 
    stages:
-     1 clone  source code
-     2 build 
-     3 Publish Junit Test results
-     4 archive the Artifact
-     5 Static code analysis
+     1. clone  source code
+     2. build 
+     3. Publish Junit Test results
+     4. archive the Artifact
+     5. Static code analysis
         sonarqube
-     6 store builds in repository
+     6. store builds in repository
         Jfrog artifactory 
         Nexus
         S3 
- 
+  # Environemnt:
    git , github , jenkins , sonarqube , jfrog artifactory ,maven , docker (create image and push registry) , kuberenets(deploy pods images taken from dockerhub) EKS , (namespace)
 
 
