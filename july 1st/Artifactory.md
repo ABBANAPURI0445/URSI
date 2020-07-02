@@ -20,14 +20,14 @@ steps:
 
 
 ## 4 how to integrate to jenkins 
-  1 Install Plugin:  
+  1. Install Plugin:  
   * goto jenkins
     goto manage jenkins
       ==> manage plugin
         ==> available
          ==> plugin name: artifactory
            ==> install plugin and restar
-  2 goto manage jenkins
+  2. goto manage jenkins
        goto configure system
          look at jfrog image
 
