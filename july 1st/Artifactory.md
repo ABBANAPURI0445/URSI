@@ -36,14 +36,14 @@ steps:
 
 ## static code analysis
   
-  1 use case
-  2 tools in static code analysis
+  1 use case:
+  2 tools in static code analysis:
      veracode
      sonarqube
      codecy
   3 how to install sonarqube:
      
-  4 how to integrate to jenkins
+  4 how to integrate to jenkins:
      * install plugin
      * goto system configure 
          look at sonarqube image
