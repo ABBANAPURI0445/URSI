@@ -27,7 +27,8 @@ steps:
         ==> available
          ==> plugin name: artifactory
            ==> install plugin and restar
-  2. goto manage jenkins
+  2. Integrate 
+  * goto manage jenkins
        goto configure system
          look at jfrog image
 
