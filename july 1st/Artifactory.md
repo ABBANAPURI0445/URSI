@@ -59,7 +59,7 @@ steps:
 
 
 
-   stages:
+  ## stages:
      1. clone  source code
      2. build 
      3. Publish Junit Test results
