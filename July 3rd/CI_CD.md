@@ -29,7 +29,7 @@
 
 ## CI:
  * CI stages , upto Jfrog artifactory
-![CI](./CI.jpg)
+![CI](./CI-CD-stages.jpg)
 ## CD:
  * CD stages docker and K8S
-![CD](./CD-stages.jpg)
+![CD](./CD.jpg)
