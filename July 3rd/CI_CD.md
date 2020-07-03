@@ -1,4 +1,4 @@
-# CD:
+# __Continuous Deployment/Delivery__:
  ## Docker Job: Docker Slave 
   __write a Dockerfile and Push to Github__
    1. clone docker file 
