@@ -16,7 +16,7 @@
    docker push abbanapuri0445/gol:1.0 
    ```
  ## __Kuberenets Job: K8s Slave__
-  __write manifest file(yourhubusername/verse_gapminder:firsttry) and Push to GitHub__
+  __write manifest file(abbanapuri0445/gol:1.0) and Push to GitHub__
    1. clone manifest 
    ```
    git clone url
