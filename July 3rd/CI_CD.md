@@ -29,7 +29,7 @@
 
 ## CI:
  * CI stages 
- ![CI](./CI-Stages.jpg)
+![CI](./CI-Stages.jpg)
 ## CD:
  * CD stages
- ![CD](./CD-stages.jpg)
+![CD](./CD-stages.jpg)
