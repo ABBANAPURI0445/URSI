@@ -32,4 +32,4 @@
 ![CI](./CI-stages.jpg)
 ## CD:
  * CD stages docker and K8S
-![CD](./CD.jpg)
+![CD](./CD-new.jpg)
