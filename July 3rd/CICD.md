@@ -16,7 +16,7 @@ stage('CodeQuality'){
 
 }
 stage('artifactory'){
-sh label: '', script: '''curl -unarexxx:admin1xxx -T /home/maven/workspace/cicd/gameoflife-web/target/gameoflife.war http://35.164.244.170:8082/artifactory/new/gameoflife.war
+sh label: '', script: '''curl -unarexxxyy:admin1xxx -T /home/maven/workspace/cicd/gameoflife-web/target/gameoflife.war http://35.164.244.170:8082/artifactory/new/gameoflife.war
 '''
 }
 }
