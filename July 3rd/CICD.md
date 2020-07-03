@@ -1,3 +1,4 @@
+```
 node('build') {
    stage('SCM') {
     git 'https://github.com/NareshAbbanapuri/game-of-life.git'
@@ -42,3 +43,4 @@ node('kubectl'){
         kubectl apply -f service.yaml'''
     }
 }
+```
