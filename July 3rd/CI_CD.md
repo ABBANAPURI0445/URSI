@@ -26,3 +26,10 @@
     kubectl apply -f deployment.yaml
     kubectl apply -f Service.yaml
     ```
+
+## CI:
+ * CI stages 
+ ![CI](./CI-Stages.jpg)
+## CD:
+ * CD stages
+ ![CD](./CD-stages.jpg)
