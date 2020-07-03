@@ -1,5 +1,5 @@
-# __Continuous Deployment/Delivery__:
- ## Docker Job: Docker Slave 
+# __Continuous Deployment/Delivery__
+ ## __Docker Job: Docker Slave__ 
   __write a Dockerfile and Push to Github__
    1. clone docker file 
    ```
@@ -15,7 +15,7 @@
    docker tag gol:1.0 abbanapuri0445/gol:1.0
    docker push abbanapuri0445/gol:1.0 
    ```
- ## Kuberenets Job: K8s Slave
+ ## __Kuberenets Job: K8s Slave__
   __write manifest file(yourhubusername/verse_gapminder:firsttry) and Push to GitHub__
    1. clone manifest 
    ```
@@ -27,9 +27,9 @@
     kubectl apply -f Service.yaml
    ```
 
-### CI:
+### __CI__
   __CI stages , upto Jfrog artifactory__
 ![CI](./CI-stages.JPG)
-### CD:
+### __CD__
   __CD stages docker and K8S__
 ![CD](./CD-new.JPG)
