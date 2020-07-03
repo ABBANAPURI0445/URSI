@@ -25,11 +25,11 @@
    ```
     kubectl apply -f deployment.yaml
     kubectl apply -f Service.yaml
-    ```
+   ```
 
 ## CI:
- * CI stages 
+ * CI stages , upto Jfrog artifactory
 ![CI](./CI-Stages.jpg)
 ## CD:
- * CD stages
+ * CD stages docker and K8S
 ![CD](./CD-stages.jpg)
