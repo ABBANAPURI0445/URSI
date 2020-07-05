@@ -1,0 +1,20 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+   name: deploy-appserver  ## deployment name
+spec:                                 ## deployment ==> ReplicaSet
+  replicas: 2
+  selector: 
+    matchLabels:
+      deploy: app
+  template: 
+    metadata:
+     name: pod-app-d
+     labels:
+       deploy: app
+    spec: 
+      containers:
+       - image: abbanapuri0445/ursi:1.0
+         name: appserver
+         ports:
+          - containerPort: 8080 
