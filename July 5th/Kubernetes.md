@@ -60,7 +60,7 @@ node('docker'){
   * jenkins master , kubectl slave(where we install kubectl) 
   
 
-## CICD:
+### Continous Integration && Continous Deployment:
   1. Continous Integration
       stages:
        1. clone source java code
