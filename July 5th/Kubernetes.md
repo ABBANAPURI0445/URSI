@@ -23,7 +23,7 @@ node('docker'){
   ## EKS Cluster:
      * Login AWS Cosole
      * Setup EKS Cluster
-  [eks cluster](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html)
+  [eks cluster setup](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html)
   1. Launch EC2 machine (kubectl) (t2.micro) __install openjdk8__
   2. Login into EC2 machine and Install the AWS CLI 
     Please run below commands as Ubuntu user 
@@ -64,16 +64,16 @@ node('docker'){
   
 
 ### __Continous Integration & Continous Deployment__:
-  1. Continous Integration
-      stages:
+  1. __Continous Integration__
+      __stages__:
        1. clone source java code
        2. execute build commands 
        3. Publish Junit test results
        4. archive the artifact
        5. Static code analysis
        6. Store artifact in jfrog
-  2. Continous Deployment/Delivery
-      stages:
+  2. __Continous Deployment/Delivery__
+      __stages__:
         1. clone dockerfile 
         2. create image 
         3. push to remote registry
