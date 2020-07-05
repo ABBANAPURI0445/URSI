@@ -1,0 +1,10 @@
+//write a manifest file and push to github
+node('kubectl') {
+    stage('clone-manifestfile') {
+   git 'https://github.com/ABBANAPURI0445/k8s-manifestfile.git'
+}
+stage('deploy'){
+    sh label: '', script: '''kubectl apply -f deployment.yaml
+kubectl apply -f service-lb.yaml'''
+}
+}

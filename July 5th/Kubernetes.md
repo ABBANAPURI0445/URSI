@@ -58,4 +58,30 @@ node('docker'){
 
 ## Master-slave setup:
   * jenkins master , kubectl slave(where we install kubectl) 
-  * 
+  
+
+## CICD:
+  1. Continous Integration
+      stages:
+       1. clone source java code
+       2. execute build commands 
+       3. Publish Junit test results
+       4. archive the artifact
+       5. Static code analysis
+       6. Store artifact in jfrog
+  2. Continous Deployment/Delivery
+      stages:
+        1. clone dockerfile 
+        2. create image 
+        3. push to remote registry
+        4. clone manifest files
+        5. apply to eks cluster
+
+
+
+Complte CICD flow
+ * with credentials
+daybuild and night build
+
+
+docker image build --build-arg src=http://54.187.78.11:8082/artifactory/GOL/gameoflife8.war -t gol:$BUILD_NUMBER.0  .

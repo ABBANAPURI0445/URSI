@@ -2,6 +2,7 @@ apiVersion: apps/v1
 kind: Deployment
 metadata:
    name: deploy-appserver  ## deployment name
+   namespace: Test
 spec:                                 ## deployment ==> ReplicaSet
   replicas: 2
   selector: 
