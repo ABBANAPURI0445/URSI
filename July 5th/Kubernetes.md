@@ -16,9 +16,9 @@ node('docker'){
 }
 ```
 # __Kubernetes__:
-  Lab SetUp:
-    * create K8s Cluster
-       clusters: Kubeadm , EKS
+  Lab SetUp: \
+    * create K8s Cluster \
+       clusters: Kubeadm , EKS \
     * In This CICD i use Eks Cluster 
   ## EKS Cluster:
      * Login AWS Cosole
