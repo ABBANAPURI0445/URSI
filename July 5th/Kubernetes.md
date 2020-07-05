@@ -24,7 +24,7 @@ node('docker'){
      * Login AWS Cosole
      * Setup EKS Cluster
   [eks cluster](https://docs.aws.amazon.com/eks/latest/userguide/getting-started-eksctl.html)
-  1. Launch EC2 machine (kubectl) (t2.micro)
+  1. Launch EC2 machine (kubectl) (t2.micro) __install openjdk8__
   2. Login into EC2 machine and Install the AWS CLI 
     Please run below commands as Ubuntu user 
    ```
