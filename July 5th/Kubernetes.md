@@ -1,8 +1,10 @@
+# __Docker__:
 * write Dockerfile
 * Push to Github
+```
 node('docker'){
     stages:
-      clone dockerfile
+      clone dockerfile 
       build docker image
       push to Remote Registry
        store Docker Images in Multiple Places
@@ -12,7 +14,8 @@ node('docker'){
          Nexus
          Jfrog 
 }
-# Kubernetes:
+```
+# __Kubernetes__:
   Lab SetUp:
     * create K8s Cluster
        clusters: Kubeadm , EKS
@@ -56,11 +59,11 @@ node('docker'){
     --managed
   ```
 
-## Master-slave setup:
+## __Master-slave setup__:
   * jenkins master , kubectl slave(where we install kubectl) 
   
 
-### Continous Integration && Continous Deployment:
+### __Continous Integration & Continous Deployment__:
   1. Continous Integration
       stages:
        1. clone source java code
@@ -80,7 +83,7 @@ node('docker'){
 
 
 Complte CICD flow
- * with credentials
+ * with credentials \
 daybuild and night build
 
 
