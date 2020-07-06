@@ -33,10 +33,10 @@ node('docker'){
    sudo apt-get install awscli -y
    ```
   3. Configure AWS 
-     * Create IAM User
+     1. Create IAM User
        We need access and Secret key
        
-    * run Below command on Ec2 machine
+     2. run Below command on Ec2 machine
       ```
       aws configure
       ```
