@@ -29,13 +29,13 @@ node('docker'){
     Please run below commands as Ubuntu user 
    ```
    sudo apt-get update
+   sudo apt-get install openjdk-8-jdk -y
    sudo apt-get install awscli -y
    ```
   3. Configure AWS 
      * Create IAM User
        We need access and Secret key
-       AKIATBPXLQH3KSJ4FZE5
-       NL7d/vi2hvl+oHg8goUVd+gdpBnGLJDBiGQCMf3h
+       
     * run Below command on Ec2 machine
       ```
       aws configure
