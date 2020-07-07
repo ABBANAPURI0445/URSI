@@ -35,7 +35,7 @@ node('docker') {
 }
   stage('build docker image'){
     withCredentials([usernamePassword(credentialsId: 'jfrog', passwordVariable: 'password', usernameVariable: 'user')]) {
-    docker image build --build-arg user=$user --build-arg password=$password --build-arg url=http://52.10.220.219:8082/artifactory/GOL/gameoflife$BUILD_NUMBER.war -t gol:$BUILD_NUMBER.0 . 
+    sh "docker image build --build-arg user=$user --build-arg password=$password --build-arg url=http://52.10.220.219:8082/artifactory/GOL/gameoflife${BUILD_NUMBER}.war -t gol:${BUILD_NUMBER}.0 ."
 }  
   }
   stage('docker login'){
