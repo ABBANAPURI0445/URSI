@@ -1,0 +1,14 @@
+## CICD:
+ Maste-slave:
+   maven -- 
+   docker -- 
+   kubectl -- 
+
+## sonarqube  -- static
+## jfrog 
+
+
+    
+
+master-slave between : jenkins master and kubectl l
+
