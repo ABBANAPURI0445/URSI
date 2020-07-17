@@ -11,5 +11,4 @@
 ### Build and deploy to a Java web app 
 [deploy java app](https://docs.microsoft.com/en-us/azure/devops/pipelines/ecosystems/java-webapp?view=azure-devops&tabs=java-tomcat) 
 
-
  
