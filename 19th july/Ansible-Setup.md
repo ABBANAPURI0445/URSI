@@ -9,29 +9,29 @@
       sudo apt-add-repository --yes --update ppa:ansible/ansible
       sudo apt install ansible
      ```
-    4. create user 
-     ```
+ 2. create user 
+    ```
      addsuer ansible
-     ```
-    5. assign sudo permission
-     ```
+    ```
+ 3. assign sudo permission
+    ```
      visudo
      or
      vi /etc/sudoers
-     ```
-    6. enable passwd authentication
-     ```
+    ```
+ 4. enable passwd authentication
+    ```
      vi /etc/ssh/sshd_config
-     ```
-    7. restart sshd
-     ```
+    ```
+ 5. restart sshd
+    ```
      systemctl restart sshd
-     ```
-    8. generate ssh keys from ansible user
-     ```
+    ```
+ 6. generate ssh keys from ansible user
+    ```
      su ansible 
      ssh-keygen
-     ```
+    ```
 
 
 ## setup Nodes:
