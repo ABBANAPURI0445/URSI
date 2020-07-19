@@ -41,11 +41,11 @@
   4. restart sshd
 
 ## Master slave connection:
-   1. login into ACS 
-    ```
-     ssh ansible@3.89.83.156
-    ```
-   2. share ssh keys (id_rsa.pb) to nodes
-    ```
-     ssh-copy-id nodeusername@nodeipaddress
-    ```
+ 1. login into ACS 
+  ```
+   ssh ansible@3.89.83.156
+  ```
+ 2. share ssh keys (id_rsa.pb) to nodes
+  ```
+   ssh-copy-id nodeusername@nodeipaddress
+  ```
