@@ -78,4 +78,4 @@ service:
      ansible-playbook --inventory-file myhost playbook.yml
      or
      ansible-playbook --inventory myhost playbook.yml
-     
+![apply playbook](ansible.png)
