@@ -69,6 +69,11 @@ service:
  ```
 ### apply playbook to remote nodes
     ```
+     -i or --inventory or --inventory-file 
+     eg: 
      ansible-playbook -i myhost playbook.yml
-     -i inventory-file 
+     or
+     ansible-playbook --inventory-file myhost playbook.yml
+     or
+     ansible-playbook --inventory myhost playbook.yml
     ```
