@@ -1,0 +1,15 @@
+--- 
+- hosts: all  
+  become: yes  ## sudo 
+  tasks:
+  - name: install apache2 on ubuntu
+    apt: 
+      name: apache2  ## sudo apt-get intall apache2 -y
+      state: present
+      update_cache: yes ## sudo apt-get update
+    when: ansible_hostname == "ip-172-31-35-10" 
+  - name: install tree on ubuntu
+    apt: 
+     name: tree 
+     state: present
+    when: ansible_hostname == "ip-172-31-35-10" 

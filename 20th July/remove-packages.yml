@@ -1,0 +1,13 @@
+--- 
+- hosts: all  
+  become: yes  ## sudo 
+  tasks:
+  - name: install apache2 on ubuntu
+    apt: 
+      name: apache2  ## sudo apt-get intall apache2 -y
+      state: absent
+      update_cache: yes ## sudo apt-get update 
+  - name: install tree on ubuntu
+    apt: 
+     name: tree 
+     state: absent

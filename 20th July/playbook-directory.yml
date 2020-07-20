@@ -1,0 +1,8 @@
+---
+- hosts: all
+  become: yes
+  tasks:
+  - name: create directory
+    file: 
+     path: /home/ansible/emptydir
+     state: directory
