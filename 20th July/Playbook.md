@@ -1,5 +1,6 @@
 ## playbook: 
-execute task on centos only
+```
+execute task on centos only 
 when: ansible_os_family == "RedHat"
 execute task on ubuntu only
 when: ansible_o_falimy == "Debian"
@@ -9,11 +10,12 @@ execute this on specific host
 when: ansible_hostname == "ip-172-31-35-10"
 skip hostname 
 when: ansible_hostname != "ip-172-31-35-10"
-
-
+```
+```
 install httpd on centos: 
 manual command: yum install httpd
 yum install httpd convert into ansible module
+```
 ```
  yum:
     name: httpd
@@ -44,16 +46,16 @@ service:
   ```
 * write a playbook for create directory
    directory in ansible module  ==> file module
-```
----
-- hosts: all
-  become: yes
-  tasks:
-  - name: create directory
-    file: 
-     path: /home/ansible/emptydir
-     state: directory
-```
+  ```
+    ---
+    - hosts: all
+    become: yes
+    tasks:
+    - name: create directory
+        file: 
+        path: /home/ansible/emptydir
+        state: directory
+  ```
 * write playbook for create user jenkins
   manaul ==> adduser username
   convert into playbook 
@@ -66,7 +68,7 @@ service:
       user:
         name: jenkins
         state: present
- ```
+  ```
 ### apply playbook to remote nodes
      ```
      -i or --inventory or --inventory-file 
