@@ -76,15 +76,15 @@
        ``` 
   5. copy file to remote nodes convert into ansible task \
      * copy file into remote nodes in ansible 
-    ```
-    - name: copy single line content into remote nodes
-      copy: 
-        content: '<?php phpinfo(); ?>'
-        dest: /var/www/html/info.php 
-    OR
-    - name: copy file into remote nodes
-      copy: 
-        src: info.php
-        dest: /var/www/html/info.php
-    ```
+       ```
+       - name: copy single line content into remote nodes
+         copy: 
+           content: '<?php phpinfo(); ?>'
+           dest: /var/www/html/info.php 
+       OR
+       - name: copy file into remote nodes
+         copy: 
+           src: info.php
+           dest: /var/www/html/info.php
+       ```
     
