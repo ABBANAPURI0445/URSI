@@ -27,7 +27,7 @@
           update_cache: yes
       ```
  2. sudo systemctl restart apache2 convert into ansible task  
-  * service equivalent module in ansible
+   * service equivalent module in ansible
     ```
     - name: restart apache2
       service:
