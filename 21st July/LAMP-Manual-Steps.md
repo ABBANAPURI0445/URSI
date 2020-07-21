@@ -28,12 +28,12 @@
       ```
  2. sudo systemctl restart apache2 convert into ansible task  
    * service equivalent module in ansible
-    ```
-    - name: restart apache2
-      service:
-        name: apache2 
-        state: started
-    ```
+     ```
+      - name: restart apache2
+        service:
+          name: apache2 
+          state: started
+     ```
   3. sudo apt-get install php libapache2-mod-php  php-mysql convert into ansible task \
     * install multiple packages in ansible 
      we have 3 ways to install multiple packages in ansible
