@@ -17,16 +17,16 @@
     ```
 ## linux convert into ansible task:
 ### TASKS:
- 1. sudo apt-get update & sudo apt-get install apache2 convert into ansible task \
+ 1. sudo apt-get update & sudo apt-get install apache2 convert into ansible task 
    * apt-get equivalent module in anisble (google search) 
-    ```
-    - name: update packges and install apache2
-      apt: 
-        name: apache2
-        state: present
-        update_cache: yes
-    ```
- 2. sudo systemctl restart apache2 convert into ansible task  \
+     ```
+      - name: update packges and install apache2
+        apt: 
+          name: apache2
+          state: present
+          update_cache: yes
+      ```
+ 2. sudo systemctl restart apache2 convert into ansible task  
   * service equivalent module in ansible
     ```
     - name: restart apache2
