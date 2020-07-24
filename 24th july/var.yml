@@ -1,0 +1,14 @@
+- hosts: all
+  become: yes
+  vars:
+    package_name: htop
+    web_package: nginx
+  tasks:
+  - name: install some package
+    apt: 
+      name: "{{ package_name }} "
+      state: present
+  - name: install webserver
+    apt:
+     name: "{{ web_package }}"
+     state: present
