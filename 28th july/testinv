@@ -1,0 +1,14 @@
+10.0.0.5
+10.0.0.6
+10.0.0.7
+10.0.0.8
+[webserver]
+10.0.0.5
+10.0.0.6   web_centos_package=httpd
+10.0.0.7
+10.0.0.8
+[appserver]
+[dbserver]
+
+[webserver:vars]
+web_package=apache2

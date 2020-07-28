@@ -1,0 +1,14 @@
+- hosts: webserver
+  become: yes
+  tasks: 
+  - name: install apache2 on ubuntu
+    package: 
+      name: "{{ web_package }}"
+      state: presnet 
+      update_cache: yes 
+    when: ansible_os_family == "Debian" 
+  - name: install httpd on centos 
+    package: 
+      name: "{{ web_centos_package }}"
+      state: present 
+    when: ansible_os_family == "RedHat" 
