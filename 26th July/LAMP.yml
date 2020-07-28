@@ -1,0 +1,28 @@
+--- 
+- hosts: all 
+  become: yes 
+  tasks: 
+  - name: update packges and install apache2
+    apt: 
+      name: apache2
+      state: present
+      update_cache: yes
+    notify: restart apache2
+  - name: install multiple php packages using loop
+    apt:
+      name: "{{ item }}"
+      state: present
+    loop:
+        - php
+        - libapache2-mod-php
+        - php-mysql 
+    notify: restart apache2
+  - name: copy single line content into remote nodes
+    copy: 
+      content: '<?php phpinfo(); ?>'
+      dest: /var/www/html/info.php 
+  handlers:
+  - name: restart apache2 
+    service: 
+      name: apache2 
+      state: restarted

@@ -1,0 +1,9 @@
+- hosts: all 
+  become: yes
+  vars:
+    username: ansible
+  tasks: 
+  - name: copy dynamic  content into ansible nodes
+    copy: 
+      src: /home/ansible/dynamic.j2
+      dest: /home/ansible/dynamic-content 

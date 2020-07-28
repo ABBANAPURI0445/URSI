@@ -1,0 +1,9 @@
+- hosts: all 
+  become: yes
+  vars:
+    username: ansible
+  tasks: 
+  - name: copy static content into ansible nodes
+    copy: 
+      src: /home/ansible/file.txt
+      dest: /home/ansible/static-content 
