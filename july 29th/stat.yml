@@ -1,0 +1,15 @@
+- hosts: all 
+  become: yes 
+  tasks: 
+  - name: check file exists or not
+    stat:
+      path: /home/ansible/idempotent.txt 
+    register: stat_result 
+  - name: install tree 
+    command: apt-get install tree
+    when: stat_result.stat.exists == False 
+  
+  - name: create file 
+    file: 
+      path: /home/ansible/idempotent.txt
+      state: touch
