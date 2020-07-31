@@ -1,0 +1,25 @@
+- hosts: dbserver
+  become: yes
+  vars:
+    package_name: postgresql
+  tasks: 
+  - name: work_mem
+    lineinfile:
+      path: /etc/postgresql/11/main/postgresql.conf
+      regexp: 'work_mem'
+      line: work_mem = 64MB 
+  - name: effective cache size
+    lineinfile:
+      path: /etc/postgresql/11/main/postgresql.conf
+      regexp: 'effective_cache_size'
+      line: effective_cache_size = 2GB
+  - name: shared buffers  
+    lineinfile:
+      path: /etc/postgresql/11/main/postgresql.conf
+      regexp: 'shared_buffers'
+      line: shared_buffers = 1024MB
+  handlers: 
+  - name: restart postgresql 
+    service: 
+      name: {{ package_name }}
+      state: restarted
