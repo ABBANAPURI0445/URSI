@@ -18,6 +18,7 @@
       path: /etc/postgresql/11/main/postgresql.conf
       regexp: 'shared_buffers'
       line: shared_buffers = 1024MB
+    notify: restart postgresql
   handlers: 
   - name: restart postgresql 
     service: 
